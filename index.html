@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Lucky Cat Cafe</title>
+  </head>
+  <body>
+    <h1>Lucky Cat Cafe</h1>
+    <div id="nav">
+      <a class="link" href="index.html">Home</a>
+      | <a class="link" href="Menu/Menu.html">Menu</a>
+    </div>
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam felis ac nisi maximus tristique. Aliquam lacinia accumsan urna vel tempus. Sed laoreet quis est a dapibus. Donec fermentum diam nunc, ac commodo sem gravida eu. In dictum nunc vitae elementum pharetra. Proin urna sem, sodales vel mauris non, elementum dapibus lorem. </p>
+      <p>Sed luctus odio faucibus metus elementum, ut sagittis purus aliquet. Phasellus tincidunt euismod eros at ultricies. Curabitur sollicitudin elit sed ligula fringilla, vel sagittis neque commodo.</p>
+      <p>Pellentesque lacinia id turpis ac rhoncus. Pellentesque congue imperdiet urna sed bibendum. Duis ultricies cursus consequat. Etiam vulputate velit a sagittis laoreet. Aliquam congue dui sit amet ipsum vehicula facilisis. Praesent convallis facilisis odio, at rutrum nulla lacinia eu. Donec volutpat id lorem nec tincidunt.</p>
+      <br>
+      <img class="slide" src="Images/Slides/mug.jpg" alt="Mug">
+      <img class="slide" src="Images/Slides/sign.jpg" alt="Sign">
+      <img class="slide" src="Images/Slides/tea.jpg" alt="Tea">
+      <img class="slide" src="Images/Slides/kettle.jpg" alt="Kettle">
+    </div>
+
+    <div id="footer">
+      <a href="https://facebook.com" class="link" target="_blank"><img class="social" src="Images/Icons/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com" class="link" target="_blank"><img class="social" src="Images/Icons/twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com" class="link" target="_blank"><img class="social" src="Images/Icons/instagram.png" alt="Instagram"></a>
+      <a href="https://gmail.com" class="link" target="_blank"><img class="social" src="Images/Icons/sendmessage.png" alt="Gmail"></a>
+    </div>
+
+  </body>
+
+  <script type="text/javascript">
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var x = document.getElementsByClassName("slide");
+        for (var i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
+    }
+  </script>
+</html>
